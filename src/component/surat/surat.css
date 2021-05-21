@@ -1,0 +1,10 @@
+.info-surat{
+    margin: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.8);
+    padding: 10px;
+}
+.info-surat h4,
+.info-surat p{
+    margin-left: 10px;
+}

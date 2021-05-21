@@ -1,0 +1,56 @@
+.body{
+    margin-right: -10px;
+}
+.jumbotron {
+    background: url(https://cdn-brilio-net.akamaized.net/news/2015/06/29/7630/thumbnail-begini-kronologi-pembukuan-alquran-hingga-jadi-seperti-yang-sekarang-1506298.jpg)
+        no-repeat center center fixed;
+    background-size: cover;
+    height: 640px;
+    margin-top: -75px;
+    text-align: center;
+    position: relative;
+}
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .container {
+    margin-top: 200px;
+}
+.jumbotron .display-4,
+.navbar .navbar-brand {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.navbar .navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+    z-index: 1;
+    position: relative;
+}
+.jumbotron .display-4 {
+    z-index: 1;
+    position: relative;
+}
+.tombol {
+    border-radius: 40px;
+}
+.info-panel {
+    margin-top: -70px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+}
+.info-panel .col-lg{
+    padding: 20px;
+}

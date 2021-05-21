@@ -1,0 +1,175 @@
+.jumbotron {
+    background: url(https://cdn-brilio-net.akamaized.net/news/2015/06/29/7630/thumbnail-begini-kronologi-pembukuan-alquran-hingga-jadi-seperti-yang-sekarang-1506298.jpg)
+        no-repeat center center;
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .container {
+    margin-top: 200px;
+}
+.jumbotron .display-4,
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.navbar .navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+.navbar .nav-link {
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+.navbar .nav-link:hover::after {
+    content: "";
+    display: block;
+    border: solid 1px blue;
+    margin-top: 5px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+.tombol {
+    border-radius: 40px;
+}
+.info-panel {
+    margin-top: -120px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+}
+.loader {
+    height: 20px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: 2px solid white;
+}
+
+.loader--dot:first-child {
+    background-color: #8cc759;
+    animation-delay: 0.5s;
+}
+
+.loader--dot:nth-child(2) {
+    background-color: #8c6daf;
+    animation-delay: 0.4s;
+}
+
+.loader--dot:nth-child(3) {
+    background-color: #ef5d74;
+    animation-delay: 0.3s;
+}
+
+.loader--dot:nth-child(4) {
+    background-color: #f9a74b;
+    animation-delay: 0.2s;
+}
+
+.loader--dot:nth-child(5) {
+    background-color: #60beeb;
+    animation-delay: 0.1s;
+}
+
+.loader--dot:nth-child(6) {
+    background-color: #fbef5a;
+    animation-delay: 0s;
+}
+
+.loader--text {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+}
+
+.loader--text:after {
+    content: "";
+    font-weight: bold;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+    45% {
+        transform: translateX(230px);
+    }
+    65% {
+        transform: translateX(230px);
+    }
+    95% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        content: "";
+    }
+    25% {
+        content: "";
+    }
+    50% {
+        content: "";
+    }
+    75% {
+        content: "";
+    }
+}
+audio{
+    width: 350px;
+    margin: auto;
+}
+@media (min-width: 992px){
+    audio{
+        width: 220px;
+        margin: auto;
+    }
+}
+.navbar .bg-primary{
+    transition: background-color 200ms linear;
+}
